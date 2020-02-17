@@ -1,7 +1,7 @@
-TP:0
-TN:127
-FP:0
-FN:65
-accuracy:0.6614583333333334
-sensitivity:0.0
-specificity:1.0
+TP:4
+TN:112
+FP:2
+FN:74
+accuracy:0.6041666666666666
+sensitivity:0.05128205128205128
+specificity:0.9824561403508771

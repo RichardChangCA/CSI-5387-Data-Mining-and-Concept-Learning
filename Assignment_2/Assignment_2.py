@@ -174,8 +174,8 @@ def main():
                     model_name = "multilayer_"+str(use_bias)+"_"+activation+"_"+str(learning_rate)+"_"+str(epoch)
                     y_predict,y_score = multilayer(model_name,X_train,y_train,X_test,use_bias,activation,learning_rate,epoch)
                     cal_acc(model_name,y_predict,y_test)
-                    plot_roc(color[2],model_name,y_score,y_test)
-
+                    if(epoch==100 and learning_rate==0.01 and use_bias==True and activation=='relu'):
+                        plot_roc(color[2],model_name,y_score,y_test)
 
     plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
     plt.xlim([0.0, 1.0])
