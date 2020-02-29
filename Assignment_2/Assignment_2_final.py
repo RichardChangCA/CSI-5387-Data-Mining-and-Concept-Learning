@@ -182,7 +182,7 @@ def main():
     # use_bias_list = [True, False]
     # activation_list = ['relu','sigmoid','tanh']
     epoch_list = [200]
-    learning_rate_list = [0.01]
+    learning_rate_list = [0.1]
     use_bias_list = [True]
     activation_list = ['sigmoid']
     for epoch in epoch_list:
@@ -192,7 +192,7 @@ def main():
                     model_name = "multilayer_"+str(use_bias)+"_"+activation+"_"+str(learning_rate)+"_"+str(epoch)
                     y_predict,y_score = multilayer(model_name,X_train,y_train,X_test,use_bias,activation,learning_rate,epoch)
                     cal_acc(model_name,y_predict,y_test)
-                    if(epoch==200 and learning_rate==0.01 and use_bias==True and activation=='sigmoid'):
+                    if(epoch==200 and learning_rate==0.1 and use_bias==True and activation=='sigmoid'):
                         plot_roc(color[2],model_name,y_score,y_test)
 
     plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
