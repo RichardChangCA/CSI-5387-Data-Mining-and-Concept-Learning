@@ -1,0 +1,12 @@
+initialization:
+C_1:[[1, 0], [2, 1]]
+C_2:[[0, 1], [3, 3]]
+sum_squared_error:7.5
+kmeans iteration 1:
+C_1:[[1, 0], [0, 1], [2, 1]]
+C_2:[[3, 3]]
+sum_squared_error:2.6666666666666665
+kmeans iteration 2:
+C_1:[[1, 0], [0, 1], [2, 1]]
+C_2:[[3, 3]]
+sum_squared_error:2.6666666666666665
