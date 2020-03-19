@@ -9,7 +9,7 @@ similarity_matrix =  [1.00, 0.10, 0.41, 0.55, 0.35,
 similarity_matrix = np.array(similarity_matrix)
 similarity_matrix = np.reshape(similarity_matrix,[5,5],order='C')
 
-clustering = DBSCAN(eps=0.5, min_samples=2).fit(similarity_matrix)
+clustering = DBSCAN(eps=0.2, min_samples=2).fit(similarity_matrix)
 
 f = open("Part_B_3_result.txt",'w+')
 f.write(str(clustering.labels_)+'\n')

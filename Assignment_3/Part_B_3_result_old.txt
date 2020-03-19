@@ -1,5 +1,7 @@
-[-1 -1 -1 -1 -1]
-[]
+[-1  0 -1 -1  0]
+[1 4]
 others are noise points
 no border point
 Border points are points that are (in DBSCAN) part of a cluster, but not dense themselves (i.e. every cluster member that is not a core point).
+
+eps=0.5
