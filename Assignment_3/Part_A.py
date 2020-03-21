@@ -26,12 +26,12 @@ def my_apriori(min_support_value,save_file_name):
     rules = association_rules(frq_items, metric ="confidence", min_threshold = 0.5) 
     rules = rules.sort_values(['lift'], ascending =[False])
     rules["antecedent_len"] = rules["antecedents"].apply(lambda x: len(x))
-    filtered_rules = rules[(rules["antecedent_len"] == 2)]
+    filtered_rules = rules[(rules["antecedent_len"] == 1)]
     f = open(save_file_name,'w+')
     f.write(str(filtered_rules.columns) + '\n')
     for item in filtered_rules.values:
         f.write(str(item) + '\n')
     f.close()
 
-my_apriori(0.005,"results_5.txt")
-my_apriori(0.001,"results_1.txt")
+my_apriori(0.005,"results_5_new.txt")
+my_apriori(0.001,"results_1_new.txt")

@@ -1,0 +1,8 @@
+Index(['antecedents', 'consequents', 'antecedent support',
+       'consequent support', 'support', 'confidence', 'lift', 'leverage',
+       'conviction', 'antecedent_len'],
+      dtype='object')
+[frozenset({'baking powder'}) frozenset({'whole milk'})
+ 0.017691916624300967 0.25551601423487547 0.009252669039145907
+ 0.5229885057471264 2.0467934556398677 0.004732101019128791
+ 1.5607254641341164 1]

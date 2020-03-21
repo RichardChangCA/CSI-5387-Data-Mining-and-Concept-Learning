@@ -34,7 +34,8 @@ f.write(str(clustering.labels_)+'\n')
 f.close()
 
 plt.figure(figsize=(10, 7))  
-plt.title("Dendrograms")  
-dend = shc.dendrogram(shc.linkage(similarity_matrix, method='complete', metric='euclidean'))
+plt.title("Dendrograms")
+dend = shc.dendrogram(shc.linkage(similarity_matrix, method='single', metric='euclidean'))
 # plt.show()
-plt.savefig("Dendrograms.png")
+plt.savefig("Dendrograms_single.png")
+
